@@ -1,0 +1,231 @@
+html, body{
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: GeneralFont;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+header .nav-links {
+    font-family: GeneralFont;
+    color: white;
+}
+
+
+#root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.homepage {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.topbar {
+    /* background-color: aquamarine; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7.5rem;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    padding-left: 4rem;
+    padding-right: 12rem;
+}
+
+main {
+    padding-top: 15rem;
+    padding-left: 10rem;
+    padding-right: 4rem;
+}
+
+main .title{
+    font-size: 3.8rem;
+    margin-right: 4.5rem;
+    /* background-color: tomato; */
+    height: 18.5rem;
+}
+
+main .title span:last-child {
+    /* display: inline-block; */
+    min-width: auto;
+}
+
+main .titleDescription {
+    padding-top: 2rem;
+    /* background-color: turquoise; */
+    margin-right: 46%;
+    font-size: 1.5rem;
+}
+
+main .skillset-container {
+    height: 47.5rem;
+    width: 100%;
+    display: flex;
+}
+
+main .skillset-section{
+    font-size: 3.5rem;
+    margin-right: 4.5rem;
+    /* height: 20.5rem; */
+    /* background-color: blueviolet; */
+}
+
+main .grid-container {
+    /* background-color: turquoise; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+main .grid-section{
+    /* background-color: rgba(2, 143, 98, 0.1); */
+    border-radius: 1rem;
+    height: 17.5rem;
+    padding: 2rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: start;
+}
+
+main .grid-section-title{
+    width: 100%;
+    align-items: center;
+}
+
+div .skillset-footer-radius{
+    position: relative;
+    margin-top: -3.5rem;
+    height: 5rem;
+    width: 100%;
+    border-bottom-left-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    z-index: 2;
+}
+
+div .LanguagesAndToolsSection{
+    position: relative;
+    margin-top: -2rem;
+    border-bottom-left-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    height: 35rem;
+    font-size: 1.5rem;
+    display: flex;
+    z-index: 1;
+    /* align-items: center; */
+}
+
+div .LanguagesAndToolsSectionContainer{
+    position: relative;
+    margin-top: -35rem;
+    border-bottom-left-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    height: 35rem;
+    font-size: 1.5rem;
+    display: flex;
+    z-index: 3;
+    align-items: center;
+}
+
+div .LanguagesAndToolsSectionContents{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 25rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ProjectsPage */
+.respondr-tile {
+    position: relative;
+    width: 100%;
+    height:85rem; /* This is the height of the responder-tile */
+    left: 0px;
+    margin-top: 7.5rem;
+
+    background: radial-gradient(
+      240.62% 580.97% at 90.65% -12.28%,
+      rgba(19, 47, 42, 0.65) 0%,
+      rgba(61, 29, 23, 0.65) 45.67%,
+      rgba(99, 32, 23, 0.65) 53.37%,
+      rgba(178, 16, 3, 0.65) 76.44%,
+      rgba(138, 24, 13, 0.65) 92.79%,
+      rgba(158, 20, 8, 0.65) 96.39%
+    );
+    border-radius: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.respondr-tile-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background: url('/src/assets/blurredimages/respondrBackground.svg') center center / cover no-repeat;
+    z-index: -1;
+}
+
+div .tile-left-row {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.5rem;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    /* background-color: violet; */
+}
+
+div .tile-right-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10.5rem; */
+    height: 100%;
+    width: 100%;
+    /* background-color: indigo; */
+}
+
+h1 .tile-right-row-text{
+    justify-content: flex-end;
+    /* color: tomato; */
+}
+
+
+
+@font-face {
+    font-family: TitleFont;
+    src: url('../assets/fonts/AbhayaLibre-SemiBold.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: GeneralFont;
+    src: url('../assets/fonts/ABeeZee-Regular.ttf');
+    font-display: swap;
+}
+
+.IndexFont {
+    font-family: TitleFont;
+    height: 100%;
+    font-size: 2.5rem;
+}
